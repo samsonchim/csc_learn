@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src"3script.js">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    .container {
+      width: 100%;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    .header h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .reg-no {
+      font-size: 16px;
+      margin: 0;
+    }
+    .timer {
+      text-align: right;
+      font-size: 18px;
+      font-weight: bold;
+      color: red;
+    }
+    .time-label {
+      font-size: 12px;
+      color: red;
+      margin: 0;
+    }
+    .logout a {
+      color: red;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .menu {
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 10px;
+    }
+    .menu a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #999;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .menu a.active {
+      color: #008000;
+      border-bottom: 2px solid #008000;
+    }
+    .content {
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h2>Hello, <span id="userName">Samson Chimaraoke</span></h2>
+        <p class="reg-no">Chizor | 20231385312</p>
+      </div>
+      <div class="timer">
+        <p>⏱️ <span id="timeRemaining">4:47:51</span></p>
+       
+      </div>
+      <div class="logout">
+        <a href="#" id="logoutBtn">Logout</a>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <a href="#" class="menu-btn active" data-tab="read">Read</a>
+      <a href="#" class="menu-btn" data-tab="resources">Resources</a>
+      <a href="#" class="menu-btn" data-tab="tasks">Task(s)</a>
+    </nav>
+
+    <div class="content">
+      <section id="read" class="content-tab active">
+        <h3>What is Lorem Ipsum?</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
